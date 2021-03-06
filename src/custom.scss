@@ -1,0 +1,36 @@
+// Override default variables before the import
+$body-bg: #fff;
+$poppins: 'Poppins', sans-serif;
+
+
+@media (max-width: 767px) {
+    img {
+        width: 85%;
+    }
+    .header-font {
+        font-size: 32px !important;
+    }
+}
+.header-font {
+    font-family: $poppins;
+    font-size: 70px;
+    font-weight: 900;
+    color: #000;
+    margin: 0px 10px 30px 0px;
+}
+.img-wrapper {
+    display: flex;
+    align-items: flex-end;
+    .cone-img {
+        margin-left: 20px;
+    }
+}
+
+
+
+
+
+
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
