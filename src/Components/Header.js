@@ -25,7 +25,7 @@ const HeaderPage = () => {
               <img src={headerImg} alt="under-construction-img" width="600"/>
               <div className="work-in-progress">
                 <p>Work in progress...</p>
-                <img src={cone} alt="cone" width="55" className="cone-img"/>
+                <img src={cone} alt="cone" className="cone-img"/>
               </div>
           </div>
       </main>
