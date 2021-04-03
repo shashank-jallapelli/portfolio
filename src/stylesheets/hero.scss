@@ -1,0 +1,14 @@
+@import './common/custom.scss';
+
+$left-bg-img: '../images/left-header-pattern.svg';
+$right-bg-img: '../images/right-header-pattern.svg';
+
+.hero-section {
+    background-color: $color-primary-200;
+    height: 100vh;
+    background-image: url($left-bg-img), url($right-bg-img);
+    background-repeat: no-repeat;
+    background-position: left bottom -185px, right bottom -185px;
+    display: flex;
+    align-items: center;
+}

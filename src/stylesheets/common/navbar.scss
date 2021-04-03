@@ -1,0 +1,17 @@
+@import './custom.scss';
+
+nav.navbar {
+    background-color: $navbar-bg !important;
+    border-bottom: 1px solid $color-primary-500;
+    height: $navbar-height;
+    a.nav-link {
+        color: $color-white;
+        @media (min-width: 992px) {
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
+            &:hover {
+                background-color: darken($color: $navbar-bg, $amount: 1);
+            }
+        }
+    }
+}

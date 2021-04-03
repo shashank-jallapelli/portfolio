@@ -1,0 +1,71 @@
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+$body-bg: #fff;
+$font-poppins: 'Poppins', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-poppins;
+}
+
+//primary color palette
+
+$color-primary-100: #7B5FFA;
+$color-primary-200: #3E14FA;
+$color-primary-300: #3110C7;
+$color-primary-400: #3C2F7A;
+$color-primary-500: #1E0A7A;
+
+$color-secondary-500: #BA08FD;
+
+// basic color palette
+
+$color-white: #fff;
+$color-black: #000;
+
+
+// Navbar Styling
+
+$navbar-height: 60px;
+$navbar-bg: rgba($color: $color-primary-300, $alpha: 0.96);
+
+// primary btn
+.btn-primary {
+    background-color: $color-secondary-500;
+    border-color: $color-primary-400;
+    width: fit-content;
+    padding: 6px 12px;
+    font-weight: 500;
+    font-size: 18px !important;
+    &:hover {
+        background-color: darken($color: $color-secondary-500, $amount: 5%);
+        border: 1px solid transparent;
+        outline: none;
+    }
+}
+
+// Typography
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    color: $color-white;
+}
+h2 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 72px;
+    color: $color-white;
+}
+
+p.text-large {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: $color-white;
+}

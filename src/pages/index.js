@@ -1,13 +1,20 @@
 import * as React from "react";
-import Header from '../Components/Header'
-
+import {Helmet} from 'react-helmet';
+import Navbar from '../Components/Navbar';
+import Hero from '../Components/Hero';
+import Contact from '../Components/Contact';
 
 const IndexPage = () => {
   return (
-    <main>
-      <Header />
-    </main>
+    <div>
+      <Helmet>
+          <title>Shashank Jallapelli | Web Developer</title>
+      </Helmet>
+      <Navbar />
+      <Hero />
+      <Contact />
+    </div>
   )
 }
 
-export default IndexPage
+export default IndexPage;
